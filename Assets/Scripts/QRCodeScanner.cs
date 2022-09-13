@@ -100,4 +100,8 @@ public class QRCodeScanner : MonoBehaviour
         _rawImagebackground.rectTransform.localEulerAngles = new Vector3(0, 0, orientation);
     }
 
+    public void OpenURL(string link)
+    {
+        Application.OpenURL(link);
+    }
 }

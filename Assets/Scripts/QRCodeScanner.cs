@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-// Zxing library
-using ZXing.Common;
 using ZXing;
-using ZXing.QrCode;
 
 public class QRCodeScanner : MonoBehaviour
 {
@@ -76,12 +73,12 @@ public class QRCodeScanner : MonoBehaviour
             }
             else
             {
-                _textOut.text = "FAILED TO READ QR CODE";
+                _textOut.text = "Failed to read QR Code";
             }
         }
         catch
         {
-            _textOut.text = "FAILED IN TRY";
+            _textOut.text = "Failed in try";
         }
     }
 
